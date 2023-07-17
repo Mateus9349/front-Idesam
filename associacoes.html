@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conheça a Plataforma Inatú</title>
+    <meta name="description" content="O Sistema de Gestão Produtiva da marca coletiva das comunidades da Amazônia.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="log/icon-folha.svg" type="image/x-icon">
+	
+
+
+
+
+  <style>
+    /*body{
+      background-image: radial-gradient(circle, #223427, #222f22, #222a1f, #21261c, #1f2119);
+    }*/
+
+    body {
+
+background-color: #151313;    }
+
+    .card {
+        margin-top: 140px;
+        height: 200px;
+        width: 336px;
+        border-radius: 20px;
+        background: #534B4B;
+    }
+
+/* hover mouse */
+    .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 3px 2px 5px 14px rgba(144,92,92,0.62);
+    cursor: pointer;
+}
+
+/* hover fixo */
+.card.selected {
+    transform: translateY(-1px);
+    box-shadow: 3px 2px 5px 14px rgba(144,92,92,0.62);}
+
+
+
+  
+    /* Estilos para o botão de avançar */
+    #btn-avancar {
+        display: none;
+        /* Esconde o botão por padrão */
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 16px;
+    
+
+    }
+
+    h1{
+      position: absolute;
+                    left: 38%;
+                    right: 14%;
+                    top: 4%;
+                    bottom: 18%;
+                    color: blanchedalmond;
+    }
+
+    @media screen and (max-width: 768px) {
+    h1{
+        font-size:25px;
+        left: 70px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+ 
+  
+   
+  
+  </style>
+</head>
+
+ 
+<body>
+  <div class="container-fluid">
+    
+    <div class="row">
+      <h1>Escolha a sua associação</h1>
+        <!-- Coluna 1 -->
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card mx-auto">
+              <div class="card-body">
+                <a href="./front_APFOV/login/log.html">
+                  <img src="log/logos associacoes svg/asaga.svg" alt="" width="260" style="
+                    position: absolute;
+                    left: 10%;
+                    right: 14.61%;
+                    top: 10%;
+                    bottom: 16%;" 
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Coluna 2 -->
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card mx-auto" ><!--onclick="mostrarBotaoAvancar(2)"-->
+                <div class="card-body">
+                  <a href="/front-Idesam-main/login/log.html" >
+                  <img src="log/logos associacoes svg/aspacs.svg"  alt="" width="270"style="position: absolute;
+                  left: 10%;
+                  right: 5.36%;
+                  top: 28%;
+                  bottom: 28.45%;">
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card mx-auto" ><!--onclick="mostrarBotaoAvancar(3)"-->
+            <div class="card-body">
+                  <a href="/front-Idesam-main/login/log.html" >
+                  <img src="log/logos associacoes svg/apadrit.svg"  alt="" width="270"style="position: absolute;
+                  left: 10%;
+                  right: 5.36%;
+                  top: 28%;
+                  bottom: 28.45%;">
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna 4 -->
+        <div class="col-12 col-md-7 mb-4">
+          <div class="card mx-auto" ><!--onclick="mostrarBotaoAvancar(4)"-->
+            <div class="card-body">
+                  <a href="/front_APFOV/login/log.html">
+
+                  <img src="log/logos associacoes svg/apfov.svg"  alt="" width="260"style="position: absolute;
+                  left: 10%;
+                  right: 5.36%;
+                  top: 17%;
+                  bottom: 28.45%;">
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna 5 -->
+        <div class="col-12 col-md-2 mb-4">
+          <div class="card mx-auto" ><!--onclick="mostrarBotaoAvancar(5)"-->
+            <div class="card-body">
+                  <a href="/front-Idesam-main/login/log.html" >
+
+                  <img src="log/logos associacoes svg/rds.svg"  alt="" width="260"style="position: absolute;
+                  left: 10%;
+                  right: 5.36%;
+                  top: 13%;
+                  bottom: 28.45%;">
+                  </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botão de avançar -->
+     <!--  <button id="btn-avancar" class="btn btn-warning btn-lg" onclick="avancaTela()">Próximo</button>--> 
+    </div>
+
+
+
+    <script>
+
+      var telaAtual = 0; // Variável que armazena a tela atual (inicialmente, nenhuma tela está selecionada)
+  
+      function mostrarBotaoAvancar(numTela) {
+          telaAtual = numTela; // Armazena o número da tela atual
+          //$("#btn-avancar").show(); // Exibe o botão de avançar
+
+          $(".card.selected").removeClass("selected"); // Remove a classe 'selected' de todos os cards
+    $(event.currentTarget).closest(".card").addClass("selected"); // Adiciona a classe 'selected' ao card clicado
+    $("#btn-avancar").show(); // Exibe o botão de avançar
+      }
+  
+      function avancaTela() {
+          // Função que avança para a próxima tela, de acordo com o número da tela atual
+          switch (telaAtual) {
+              case 1:
+              window.location.href = ""; 
+                  break;
+              case 2:
+                  // Inserir aqui o código para acessar o conteúdo do Card 2
+                  break;
+              case 3:
+                  // Inserir aqui o código para acessar o conteúdo do Card 3
+                  break;
+              case 4:
+                  // Inserir aqui o código para acessar o conteúdo do Card 4
+                  break;
+              case 5:
+                  // Inserir aqui o código para acessar o conteúdo do Card 5
+                  break;
+              default:
+                  alert("Erro: tela inválida!"); // Caso a variável telaAtual tenha um valor inválido
+                  break;
+          }
+      }
+
+      
+  </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

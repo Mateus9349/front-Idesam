@@ -1,0 +1,544 @@
+body {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('../assets/fontes/BernhardGothicURW-Heavy.ttf');
+}
+
+/* navbar */
+.container-lote-selecao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#titulo-lote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--grayscale-900, #151313);
+    font-family: 'titulo', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.loteItem {
+    display: grid;
+    grid-template-areas:
+        'id materia-prima dividir'
+        'id quantidade dividir'
+    ;
+    min-width: 500px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--marrom-claro, #F6EBDF);
+    background: var(--grayscale-000, #FFF);
+    box-sizing: border-box;
+}
+
+.loteItem:hover {
+    cursor: pointer;
+}
+
+#id {
+    grid-area: id;
+    font-size: 50px;
+    margin-left: 10px;
+    color: var(--grayscale-900, #151313);
+    font-family: 'title';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 60%;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+    align-self: center;
+    justify-self: center;
+}
+
+#materia-prima::before {
+    content: url('../assets/icons_inatu/icon=droplet-solid\ 1.svg');
+    margin-right: 10px;
+}
+
+#materia-prima {
+    grid-area: materia-prima;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+    font-family: 'title';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+    padding: 20px;
+}
+
+#extrativista {
+    grid-area: extrativista;
+    display: none;
+}
+
+#local {
+    grid-area: local;
+    display: none;
+}
+
+#quantidade {
+    grid-area: quantidade;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+    font-family: 'title';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.btn-dividir {
+    grid-area: dividir;
+    height: 20%;
+    align-self: center;
+    justify-self: center;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2F1F3;
+    color: var(--verde-normal, #9CAF88);
+    text-align: center;
+    font-family: 'title';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    background: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+    background: url('../assets/img/bg-plataforma.png') #FFFFFF;
+    background-size: cover;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-family: 'title';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 35px;
+    align-items: center;
+    color: #e4dfdf;
+}
+
+a:hover {
+    color: #653024;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.link-cadastro::before {
+    content: url('../../assets/img/icon-cadastro1.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../../assets/img/icon-coletas1.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../../assets/img/icon-processos1.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../../assets/img/icon-lotes1.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../../assets/img/icon-vendas1.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+
+
+/* forms*/
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #151313;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    background: #F2F1F3;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+
+
+input:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+legend {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 16px;
+    color: #653024;
+}
+
+
+h1 {
+    font-family: 'Bernhard Gothic URW';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10 auto;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+button {
+    background: #00491E;
+    border: none;
+    color: white;
+    flex-direction: row;
+    padding: 14px 10px;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 150px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #006633;
+}
+
+
+/* forms*/
+
+main {
+    display: flex;
+    margin-left: 50px;
+}
+
+
+
+.processosPendentes {
+    display: grid;
+    grid-template-areas:
+        'id materia'
+        'id kg'
+        'continuar dividir'
+    ;
+    align-items: center;
+    justify-items: center;
+    border-radius: 32px;
+    background: var(--grayscale-000, #FFF);
+    box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.07);
+}
+
+.id-processo-pendente {
+    grid-area: id;
+    display: flex;
+    align-items: center;
+    color: var(--grayscale-900, #151313);
+    font-family: 'title';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+}
+
+.id-processo-pendente::after {
+    content: url('../../assets/log/card\ 1\ icons.svg');
+    margin-left: 10px;
+}
+
+.materia-processo-pendente {
+    grid-area: materia;
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+    font-family: 'title';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+}
+
+.quantidade-processo-pendente {
+    grid-area: kg;
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+    font-family: 'title';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+}
+
+.continuar-processo-pendente {
+    grid-area: continuar;
+    display: flex;
+    padding: 12px 24px;
+    font-family: 'title';
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: var(--verde-escuro, #00491E);
+}
+
+.dividir-processo-pendente {
+    grid-area: dividir;
+    color: var(--verde-normal, #9CAF88);
+    text-align: center;
+    font-family: 'title';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    background: none;
+}
+
+.text-dividir {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'title';
+}
+
+.div-inicia_processo {
+    margin-top: 35px;
+}
+
+.divEscolheEtapa {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.selecionarLoteDeEntrada {
+    display: flex;
+    width: 312px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    margin: 45px auto auto 45px;
+}
+
+.selecionarLoteDeEntrada:hover{
+    cursor: pointer;
+}
+
+.selecionarLoteDeEntrada img {
+    width: 88.747px;
+    height: 104px;
+}
+
+.selecionarLoteDeEntrada h1{
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+    font-family: 'title';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+}
+
+.continuarProcesso {
+    display: flex;
+    width: 312px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.divEscolheEtapa:hover{
+    cursor: pointer;
+}
+
+.divEscolheEtapa img {
+    width: 101.197px;
+    height: 74.144px;
+}
+
+.divEscolheEtapa h1{
+    color: var(--grayscale-900, #151313);
+    font-family: 'title';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+}
+
+/* <----------------------                Form embalagem                      ------------------------> */
+
+.embalagemFormulario{
+    display: block;
+}
+
+.embalagemId{
+    font-family: 'title';
+}
+
+.embalagemId span{
+    margin-left: 10px;
+}
+
+.embalagemEnergia{
+    font-family: 'title';
+}
+
+.embalagemEnergia span{
+    margin-left: 10px;
+}
+
+.embalagemMaoDeObra{
+    font-family: 'title';
+}
+
+.embalagemMaoDeObra span{
+    margin-left: 10px;
+}
+
+.embalagemMateriaPrima{
+    font-family: 'title';
+}
+
+.embalagemMateriaPrima span{
+    margin-left: 10px;
+}
+
+.embalagemDepreciacao{
+    font-family: 'title';
+}
+
+.embalagemDepreciacao span{
+    margin-left: 10px;
+}
+
+.embalagemCustoTotal{
+    font-family: 'title';
+}
+
+.embalagemCustoTotal span{
+    margin-left: 10px;
+}
+
+.embalagemCustoUnitario{
+    font-family: 'title';
+}
+
+.embalagemCustoUnitario span{
+    margin-left: 10px;
+}

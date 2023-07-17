@@ -1,0 +1,144 @@
+body{
+    display:flex;
+}
+
+/*inicio navbar */
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+
+    border-radius: 0px 20px 20px 0px;
+
+    max-height: 120vh;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 35px;
+    align-items: center;
+    color: #151313;
+}
+
+a:hover {
+
+    color: #653024;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.link-cadastro::before {
+    content: url('../../assets/img/icon-cadastro.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../../assets/img/icon-coletas.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../../assets/img/icon-processos.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../../assets/img/icon-lotes.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../../assets/img/icon-vendas.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* fim navbar */
+
+.maquina{
+    display: grid;
+    grid-template-areas: 
+        'icon nome btns'
+    ;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 15px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    border-radius: 32px;
+    width: 40vw;
+}
+
+.text{
+    font-family: 'Bernhard Gothic URW';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #151313;
+    margin: 5px;
+}
+
+.btns{
+    background: none;
+    border: none;
+}
+
+.itens-maquina{
+    margin: 0;
+    width: 15vw;
+}
+
+.btns-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

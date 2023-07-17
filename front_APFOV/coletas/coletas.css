@@ -1,0 +1,374 @@
+body {
+    display: flex;
+}
+
+.inativo {
+    display: none;
+}
+
+/* css cadastro */
+
+main {
+    left: 300px;
+    margin-top: 40px;
+    margin: 24px;
+}
+
+h1 {
+    font-family: 'Bernhard Gothic URW';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10 auto;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #151313;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    background: #F2F1F3;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+.leg {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 16px;
+    color: #151313;
+}
+
+
+.bt2 {
+    background: #00491E;
+    border: none;
+    color: white;
+    flex-direction: row;
+    padding: 14px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 7px;
+    border-radius: 16px;
+    cursor: pointer;
+    padding-right: 10px;
+    justify-self: center;
+    margin-left: 30px;
+}
+
+
+
+.bt {
+    background-color: #fff;
+    color: 0000;
+    border: 2px solid #ffa400;
+    border-radius: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+.bt:hover {
+    background-color: #ffa400;
+    color: #fff;
+}
+
+.bt:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffa400;
+}
+
+.bt:active {
+    background-color: #ffa400;
+    color: #fff;
+}
+
+
+/* css cadastro  #ffa400*/
+
+
+
+
+
+
+
+/* menu index.html*/
+
+@font-face {
+    font-family: 'title';
+    src: url('../assets/fontes/BernhardGothicURW-Heavy.ttf');
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+    background: url('../assets/img/bg-plataforma.png') #FFFFFF;
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    height: 90vh;
+    width: 200px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    margin-top: 32px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+    align-items: center;
+    color: #f7f2f2;
+    font-family: 'title';
+}
+
+a:hover {
+    color: #ffa400;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+
+
+
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+
+
+}
+
+.link-cadastro::before {
+    content: url('../assets/img/icon-cadastro1.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../assets/img/icon-coletas1.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../assets/img/icon-processos1.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../assets/img/icon-lotes1.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../assets/img/icon-vendas1.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* menu index.html*/
+
+@font-face {
+    font-family: 'texto';
+    src: url('../assets/fontes/BernhardGothicURW-Heavy.ttf'), format('ttf');
+}
+
+
+
+.container-materias-primas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80vw;
+    font-size: 20px;
+    font-family: 'title';
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.container-materias-primas span:hover {
+    cursor: pointer;
+    color: #653024;
+    font-family: 'title';
+}
+
+h1 {
+    font-family: 'title';
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 2%;
+}
+
+.form-filtro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-filtro div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formColeta fieldset {
+    margin-left: 0;
+}
+
+.inativo {
+    display: none;
+}
+
+/*  -------------------------------- cabeçalho de coletas recebidas  --------------------------------------------*/
+
+.titulo-form {
+    padding: 25px;
+}
+
+.div-titulo {
+    display: flex;
+}
+
+.titulo-form h1 {
+    margin: 55px 15px;
+    color: var(--grayscale-900, #151313);
+    text-align: center;
+
+    /* Header/Subtitle */
+    font-family: 'title';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 145.455% */
+    letter-spacing: -0.66px;
+}
+
+.titulo-form h2 {
+    margin-bottom: 40px;
+    color: var(--grayscale-900, #151313);
+    font-family: 'title';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.form-filtro {
+    display: flex;
+    gap: 24px;
+}
+
+.form-filtro div {
+    display: flex;
+}
+
+
+/* -------------------------------------- Card de coletas já recebidas -------------------------------------*/
+
+.coleta {
+    margin-right: 8%;
+    border-radius: 32px;
+    background: var(--grayscale-000, #f0ecec);
+    box-shadow: 0px 3px 18px 0px rgba(255, 14, 14, 0.07);
+    min-width: 20vw;
+}
+
+.coleta div {
+    display: grid;
+    grid-template-areas:
+        "imagem nome data"
+        "imagem quantidade preco"
+    ;
+}
+
+#imagem {
+    grid-area: imagem;
+    align-self: center;
+}
+
+#nome {
+    grid-area: nome;
+}
+
+#data {
+    grid-area: data;
+}
+
+#quantidade {
+    grid-area: quantidade;
+}
+
+#preco {
+    grid-area: preco;
+}

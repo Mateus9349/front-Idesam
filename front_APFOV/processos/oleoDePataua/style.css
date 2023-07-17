@@ -1,0 +1,251 @@
+body{
+    display: flex;
+}
+
+/* navbar */
+.container-lote-selecao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#titulo-lote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.loteItem {
+    display: grid;
+    grid-template-areas: 
+    'id materia-prima extrativista'
+    'id quantidade local'
+    ;
+    background-color: aqua;
+    width: 566px;
+    height: 152px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    border-radius: 32px;
+    margin-left: 25px;
+}
+
+#id {
+    grid-area: id;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+#materia-prima::before{
+    content: url('../../assets/icons_inatu/icon_fruta.svg');
+}
+
+#materia-prima {
+    grid-area: materia-prima;
+}
+
+#extrativista {
+    grid-area: extrativista;
+}
+
+#local {
+    grid-area: local;
+}
+
+#quantidade {
+    grid-area: quantidade;
+}
+
+.btn-dividir{
+    color: #00491E;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 35px;
+    align-items: center;
+    color: #151313;
+}
+
+a:hover {
+
+    color: #653024;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.link-cadastro::before {
+    content: url('../../assets/img/icon-cadastro.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../../assets/img/icon-coletas.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../../assets/img/icon-processos.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../../assets/img/icon-lotes.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../../assets/img/icon-vendas.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+/* navbar */
+
+
+
+/* forms*/
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #151313;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    background: #F2F1F3;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+
+
+input:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+legend {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 16px;
+    color: #653024;
+}
+
+main {
+    left: 300px;
+    margin-top: 40px;
+}
+
+
+h1 {
+    font-family: 'Bernhard Gothic URW';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10 auto;
+    border: none;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+button{
+    background: #00491E;
+    border: none;
+    color: white;
+    flex-direction: row;
+    padding: 14px 10px;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 150px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #006633;
+}
+
+
+/* forms*/
