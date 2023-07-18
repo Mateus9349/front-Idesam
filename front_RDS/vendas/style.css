@@ -1,0 +1,288 @@
+body{
+    display: flex;
+}
+
+/* menu index.html*/
+
+@font-face {
+    font-family: 'title';
+    src: url('../assets/fontes/BernhardGothicURW-Heavy.ttf');
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+    background: url('../assets/img/bg-plataforma.png') #FFFFFF;
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    height: 90vh;
+    width: 200px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    margin-top: 32px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+    align-items: center;
+    color: #f7f2f2;
+    font-family: 'title';
+}
+
+a:hover {
+    color: #ffa400;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.link-cadastro::before {
+    content: url('../assets/img/icon-cadastro1.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../assets/img/icon-coletas1.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../assets/img/icon-processos1.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../assets/img/icon-lotes1.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../assets/img/icon-vendas1.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* menu index.html*/
+
+/* ocultar formulario de venda*/
+
+.formVendas{
+    display: block;
+    transition: 5s;
+}
+
+.inativo{
+    display: none;
+}
+
+/* css cadastro */
+
+main {
+    left: 300px;
+    margin-top: 40px;
+}
+
+.cabecalho-cadastros{
+    margin-left: 80px;
+}
+
+h1 {
+    font-family: 'Bernhard Gothic URW';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10 auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #151313;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    background: #F2F1F3;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #ffa400;
+}
+
+.bt3{
+    background: #00491E;
+    border: none;
+    color: white;
+    padding: 12px 10px;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 10px auto 0 auto;
+    width: 40%;
+    border-radius: 16px;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.bt2{
+    background: #00491E;
+    border: none;
+    color: white;
+    flex-direction: row;
+    padding: 12px 10px;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.bt {
+    background-color: #fff;
+    color: 0000;
+    border: 2px solid #ffa400;
+    border-radius: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+.bt:hover {
+    background-color: #ffa400;
+    color: #fff;
+}
+
+.bt:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffa400;
+}
+
+.bt:active {
+    background-color: #ffa400;
+    color: #fff;
+}
+
+.div-form{
+    margin-left: 150px;
+}
+
+legend{
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 15px;
+    color: #151313;
+}
+
+
+/* css cadastro  #ffa400*/
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    min-width: 60vw;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: 60vw;
+}
+
+.card-vendas{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: rgb(108, 138, 164);
+    border-radius: 25px;
+    box-shadow: 1px 2px 2px 3px #653024;
+    gap: 20px;
+}
+
+
+span{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #151313;
+}
+
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #653024;
+}

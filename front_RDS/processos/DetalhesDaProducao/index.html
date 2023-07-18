@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal inatú</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html">
+            <img src="../../assets/img/logoInatu.svg" alt="logo-inatu" class="logo">
+        </a>
+        <nav class="navbar">
+            <a class="link link-cadastro" href="../../cadastros/cadastros.html">Cadastros</a>   
+            <a class="link link-coletas" href="../../coletas/coletas.html">Coletas</a>
+            <a class="link link-processos" href="../../processos/processos.html">Processamento</a>   
+            <a class="link link-lotes" href="../../lotes/lotes.html">Lotes</a>   
+            <a class="link link-vendas" href="../../vendas/vendas.html">Vendas</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <h1 class="title">Depesas do processo produtivo</h1>
+        <canvas id="meuGraficoDePizza" class="grafic">
+            
+        </canvas>
+        <div class="info" data-container>
+            
+        </div>
+    </main>
+
+    <script src="main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

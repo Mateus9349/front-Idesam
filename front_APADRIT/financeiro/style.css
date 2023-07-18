@@ -1,0 +1,123 @@
+body{
+    display:flex;
+}
+
+/*inicio navbar */
+
+@font-face {
+    font-family: 'title';
+    src: url('../assets/fontes/BernhardGothicURW-Heavy.ttf');
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 40px;
+    width: 300px;
+    background: url('../assets/img/bg-plataforma.png') #FFFFFF;
+    background-size: contain;
+    background-repeat: repeat;
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(7.5px);
+    border-radius: 0px 20px 20px 0px;
+    height: 90vh;
+    width: 200px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    margin-top: 32px;
+}
+
+a {
+    left: 10px;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+    align-items: center;
+    color: #f7f2f2;
+    font-family: 'title';
+}
+
+a:hover {
+    color: #ffa400;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 144px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.link-cadastro::before {
+    content: url('../assets/img/icon-cadastro.svg');
+    margin: 30px 5px;
+}
+
+.link-coletas::before {
+    content: url('../assets/img/icon-coletas.svg');
+    margin: 30px 5px;
+}
+
+.link-processos::before {
+    content: url('../assets/img/icon-processos.svg');
+    margin: 30px 5px;
+}
+
+.link-lotes::before {
+    content: url('../assets/img/icon-lotes.svg');
+    margin: 30px 5px;
+}
+
+.link-vendas::before {
+    content: url('../assets/img/icon-vendas.svg');
+    margin: 30px 5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-family: 'Basic Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* fim navbar */
+main{
+    width: 80vw;
+}
+
+.container-btns{
+    display: flex;
+}
+
+.btns{
+    background: none;
+    border: none;
+    margin: 5% 4%;
+}
+
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}

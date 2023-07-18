@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="cadastros.css">
+    <title>Plataforma inatú</title>
+    <link rel="icon" href="../assets/icons_inatu/icon-folha.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <img src="../assets/img/logoInatu.svg" alt="logo-inatu" class="logo">
+        </a>
+        <nav class="navbar">
+            <a class="link link-cadastro" href="../cadastros/cadastros.html">Cadastros</a>   
+            <a class="link link-coletas" href="../coletas/coletas.html">Coletas</a>
+            <a class="link link-processos" href="../processos/processos.html">Processamento</a>   
+            <a class="link link-lotes" href="../lotes/lotes.html">Lotes</a>   
+            <a class="link link-vendas" href="../vendas/vendas.html">Vendas</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="cabecalho-cadastros">
+            <h1>Cadastros</h1>
+
+            <button id="btt_Extrativista" class="bt">Extrativista</button>
+            <button id="btt_Funcionario" class="bt">Colaborador</button>
+            <button id="btt_Maquinario" class="bt">Maquinário</button>
+            <button id="btt_Ferramenta" class="bt">Ferramenta</button>
+            <button id="btt_Embalagem" class="bt">Embalagem</button>
+        </div>
+
+        <div class="extrativista-cadastro-inativo div-form" data-containerExtrativista>
+            <!--class="extra"-->
+            <form action="" class="extra">
+
+                <label for="">Nome:</label>
+                <input data-nomeExtrativista type="text" placeholder="Insira seu nome">
+
+                <label>Sexo</label>
+                <select data-sexoExtrativista name="sexo">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+
+                <label for="">cpf:</label>
+                <input data-cpfExtrativista type="text" placeholder="000.000.000-00">
+
+                <label for="">Idade:</label>
+                <input data-idadeExtrativista type="number">
+
+                <label for="">Apelido:</label>
+                <input data-apelidoExtrativista type="text" placeholder="Insira o apelido (opcional)">
+
+                <label for="">Comunidade:</label>
+                <input data-comunidadeExtrativista type="text" placeholder="comunidade/distrito/rio/igarapé">
+
+                <button data-cadastrarExtrativista type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="funcionario-cadastro-inativo div-form" data-containerFuncionario>
+            <!--class="extra"-->
+            <form action="" class="extra">
+
+                <label for="">Nome:</label>
+                <input data-nomeFuncionario type="text" placeholder="Insira seu nome">
+
+                <label for="">Idade:</label>
+                <input data-idadeFuncionario type="number">
+
+                <label>Sexo</label>
+                <select data-sexoFuncionario name="sexo">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+
+                <label for="">Comunidade:</label>
+                <input data-comunidadeFuncionario type="text" placeholder="comunidade/distrito/rio/igarapé">
+
+                <label for="">Função:</label>
+                <input data-funcaoFuncionario type="text" placeholder="Ex.Operador de máquina">
+
+                <label for="">Valor Hora:</label>
+                <input data-valorHoraFuncionario type="number" placeholder=" Valor/hora R$">
+
+                <label for="">Diária:</label>
+                <input data-valorDiariaFuncionario type="number" placeholder=" Valor/hora R$">
+
+                <button data-cadastrarFuncionario type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="maquinario-cadastro-inativo div-form" data-containerMaquinario>
+            <!--class="extra"-->
+            <form action="" class="extra">
+
+                <label for="">Nome:</label>
+                <input data-nomeMaquina type="text" placeholder="Insira seu nome">
+
+                <label for="">Tipo da maquina</label>
+                <select data-tipoMaquina>
+                    <option value="higienizadora">Higienizadora</option>
+                    <option value="seletora">Seletora</option>
+                    <option value="quebradora">Quebradora</option>
+                    <option value="secadora">Secadora</option>
+                    <option value="despolpadora">Despolpador</option>
+                    <option value="destiladora">Destiladora</option>
+                    <option value="trituradora">Trituradora</option>
+                    <option value="prensa">Prensa</option>
+                    <option value="filtro">Filtro</option>
+                </select>
+
+                <label for="">Energia</label>
+                <select data-tipoEnergia>
+                    <option value="kw">Rede Elétrica</option>
+                    <option value="diesel">Motor Estacionário</option>
+                </select>
+
+                <label for="">Potência</label>
+                <input data-potencia type="number" placeholder="kW">
+
+                <label for="">Valor</label>
+                <input data-valorMaquina type="number" placeholder="0,00 R$">
+
+                <label for="">Data de Aquisição</label>
+                <input data-dataAquisicaoMaquina type="date">
+
+                <label for="">Vida Útil</label>
+                <input data-vidaUtilMaquina type="number">
+
+                <label for="">Dias trabalhados</label>
+                <input data-diasUtilizados type="number">
+
+                <label for="">Horas trabalhadas</label>
+                <input data-horasTrabalhadas type="number">
+
+                <button data-cadastrarMaquina type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="ferramenta-cadastro-inativo div-form" data-containerFerramenta>
+            <!--class="extra"-->
+            <form action="" class="extra">
+
+                <label for="">Nome:</label>
+                <input type="text" placeholder="Insira seu nome">
+
+                <label for="">Data de Aquisição:</label>
+                <input type="date">
+
+                <label for="">Valor:</label>
+                <input type="number" placeholder="0,00 R$">
+
+                <label for="">Vida Útil:</label>
+                <input type="number">
+
+                <label for="">Depreciação Anual</label>
+                <input type="number" placeholder="0,00 R$">
+
+                <label for="">Depreciação Diaria</label>
+                <input type="number">
+
+                <label for="">Dias utilizados</label>
+                <input type="number">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="embalagem-cadastro-inativo div-form" data-containerEmbalagem>
+            <!--class="extra"-->
+            <form action="" class="extra">
+
+                <label for="">Nome:</label>
+                <input data-nomeEmbalagem type="text" placeholder="saco, balde">
+
+                <label for="">Valor:</label>
+                <input data-valorEmbalagem type="number" placeholder="0,00 R$">
+
+                <label for="">Tamanho(Kg/L)</label>
+                <input data-tamanhoEmbalagem type="number">
+
+                <label for="">Quantidade</label>
+                <input data-quantidadeEmbalagem type="number">
+
+                <button data-cadastrarEmbalagem type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="cadastros.js" type="module"></script>
+</body>
+
+</html>

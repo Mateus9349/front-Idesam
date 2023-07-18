@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma inatú</title>
+    <link rel="icon" href="../assets/icons_inatu/icon-folha.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/img/logoInatu.svg" alt="logo-inatu" class="logo">
+        </a>
+        <nav class="navbar">
+            <a class="link link-cadastro" href="../cadastros/cadastros.html">Cadastros</a>   
+            <a class="link link-coletas" href="../coletas/coletas.html">Coletas</a>
+            <a class="link link-processos" href="../processos/processos.html">Processamento</a>   
+            <a class="link link-lotes" href="../lotes/lotes.html">Lotes</a>   
+            <a class="link link-vendas" href="#">Vendas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section data-vendas>
+            <div class="menu">
+                <button data-cadastrarVendas class="bt">Cadastrar pedido</button>
+                <button data-pedidosPendentes class="bt">Pedidos pendentes</button>
+                <button data-pedidosFinalizados class="bt">Vendas</button>
+            </div>
+            <div data-containerVendas class="container">
+                <form data-formVendas class="formVendas inativo" action="">
+                    <fieldset>
+                    <legend>Pedido</legend>
+                        <label for="">Empresa</label>
+                        <input data-empresa type="text">
+                    
+                        <label for="">Produto</label>
+                        <input data-produto type="text">
+                    
+                        <label for="">Quantidade</label>
+                        <input data-quantidade type="number">
+                    
+                        <label for="">Valor</label>
+                        <input data-preco type="number">
+                    
+                        <label for="">Data de entrega</label>
+                        <input data-entrega type="date">
+                    </fieldset>
+                    <button class="bt2" data-btnCadastrar type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="vendas.js" type="module"></script>
+</body>
+</html>
