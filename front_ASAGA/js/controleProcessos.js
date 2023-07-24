@@ -77,7 +77,10 @@ async function criaProcesso(iniciaProcesso, lote_de_entrada, finalizado, quantid
                 extrativistas: extrativistas,
                 locais: locais,
                 processo: materiaPrima,
-                despesas: despesas
+                despesas: despesas,
+                cozimento: false,
+                estufagem: false,
+                separacao: false
             })
         });
         if (!conexao.ok) {
@@ -165,9 +168,9 @@ function CriaCardDivisao(id, materiaPrima) {
     </div>
     `
     let Dividir = document.querySelector('[data-btnDividir]');
-    Dividir.addEventListener('click', () => {
+    Dividir.addEventListener('click', async() => {
         let valor = document.querySelector('[data-quantidadeProcesso]').value;
-        criaProcessoPendente(id, valor, materiaPrima);
+        await criaProcessoPendente(id, valor, materiaPrima);
     })
 }
 
@@ -182,8 +185,6 @@ async function criaProcessoPendente(id, valor, materiaPrima) {
     await atualizaProcesso(id, quantidadeAtualLoteAntigo, ObjPrecos.valorRestante);
     let despesas = ObjPrecos.valorRetirada;
 
-    //escreva  aqui a chamada da funcao dividirValorMateriaPrima
-
     //replicando os processos que a maria prima ja sofreu//
     let higienizacao = dadosConvertidos.Higenizacao_selecao;
     let secagem = dadosConvertidos.Secagem;
@@ -197,6 +198,9 @@ async function criaProcessoPendente(id, valor, materiaPrima) {
     let filtragem = dadosConvertidos.Filtragem;
     let envase = dadosConvertidos.Envase;
     let selecao_primaria = dadosConvertidos.selecao_primaria;
+    let cozimento = dadosConvertidos.cozimento;
+    let estufagem = dadosConvertidos.estufagem;
+    let separacao = dadosConvertidos.separacao;
 
     const conexao = await fetch(`${api}/processos`, {
         method: "POST",
@@ -222,13 +226,18 @@ async function criaProcessoPendente(id, valor, materiaPrima) {
             extrativistas: extrativistas,
             locais: locais,
             processo: materiaPrima,
-            despesas: despesas
+            despesas: despesas,
+            cozimento: cozimento,
+            estufagem: estufagem,
+            separacao: separacao
         })
     });
     if (!conexao.ok) {
         throw new Error("Não foi possível enviar")
     }
     const conexaoConvertida = await conexao.json();
+
+    location.reload()
     return conexaoConvertida;
 }
 
@@ -247,7 +256,6 @@ async function atualizaProcesso(id, quantidade_de_entrada, despesas) {
         throw new Error("Não foi possível enviar")
     }
     const conexaoConvertida = await conexao.json();
-    location.reload()
 
     return conexaoConvertida;
 }

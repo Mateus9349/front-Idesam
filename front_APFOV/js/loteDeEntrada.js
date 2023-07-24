@@ -90,7 +90,7 @@ async function criaLote(lote_de_entrada, valor, materiaPrima) {
     let locais = dadosConvertidos.local;
 
     let quantidadeAtualLoteAntigo = dadosConvertidos.quantidade - valor;
-    atualizaLote(lote_de_entrada, quantidadeAtualLoteAntigo)
+    await atualizaLote(lote_de_entrada, quantidadeAtualLoteAntigo)
 
     const conexao = await fetch(`${api}/loteEntradas`, {
         method: "POST",
@@ -108,6 +108,7 @@ async function criaLote(lote_de_entrada, valor, materiaPrima) {
         throw new Error("Não foi possível enviar")
     }
     const conexaoConvertida = await conexao.json();
+    location.reload()
     return conexaoConvertida;
 }
 
@@ -125,7 +126,6 @@ async function atualizaLote(id, quantidade_de_entrada) {
         throw new Error("Não foi possível enviar")
     }
     const conexaoConvertida = await conexao.json();
-    location.reload()
 
     return conexaoConvertida;
 }
