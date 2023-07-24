@@ -90,7 +90,7 @@ async function criaLote(lote_de_entrada, valor, materiaPrima) {
     let locais = dadosConvertidos.local;
 
     let quantidadeAtualLoteAntigo = dadosConvertidos.quantidade - valor;
-    atualizaLote(lote_de_entrada, quantidadeAtualLoteAntigo)
+    await atualizaLote(lote_de_entrada, quantidadeAtualLoteAntigo)
 
     const conexao = await fetch(`${api}/loteEntradas`, {
         method: "POST",
