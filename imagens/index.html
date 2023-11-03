@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conheça a Plataforma Inatú</title>
+    <meta name="description" content="O Sistema de Gestão Produtiva da marca coletiva das comunidades da Amazônia.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    
+    <link rel="icon" href="log/icon-folha.svg" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+    <style>
+      @font-face {
+        font-family: "Basic Sans";
+        src: url("fontes/Basic-Sans-Regular.ttf");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Basic Sans";
+        src: url("fontes/Basic-Sans-Bold.ttf");
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Bernhard Gothic URW";
+        src: url("fontes/BernhardGothicURW-Light.ttf");
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "Bernhard Gothic URW";
+        src: url("fontes/BernhardGothicURW-Medium.ttf");
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Bernhard Gothic URW";
+        src: url("fontes/BernhardGothicURW-Heavy.ttf");
+        font-weight: 800;
+      }
+
+      .recursos1:hover {
+  color: #ffa400; /* altere a cor conforme o efeito desejado */
+  cursor: pointer; /* altere o cursor para indicar que é um link clicável */
+}
+
+
+/* Estilos para a caixa de texto */
+.caixa-privacidade {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%; /* 90% da largura da tela para dispositivos menores */
+      max-width: 800px; /* Defina uma largura máxima para a caixa */
+      height: 80%; /* 80% da altura da tela para dispositivos menores */
+      background-color: #f2f2f2;
+      padding: 30px; /* Espaçamento interno reduzido para dispositivos menores */
+      overflow-y: scroll;
+      text-align: justify;
+      border-radius: 20px;
+      z-index: 9999;
+    }
+    
+    /* Estilos para o botão de fechar */
+    .fechar {
+      position: sticky;
+      top: 10px;
+      right: 50px;
+      cursor: pointer;
+      left: 990px;
+      display: inline;
+    
+    }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <article class="lp-desktop-teste">
+      <section class="section-1">
+        <nav class="head">
+          <img
+            class="logo-inatu-icon"
+            alt=""
+            src="./public/logo-inatu@2x.png"
+          />
+          <nav class="links">
+            <nav class="links-txt">
+             
+              <a href="./Land page Aplicativo/index.html" style="text-decoration: none;">
+                <h4 class="recursos1" style="background-color: #00491E;border-radius: var(--br-base); padding: var(--padding-5xs) var(--padding-21xl);">Aplicativo</h4></a>
+              
+
+              <a class="recursos" data-scroll-to="recursos" id="recursos"
+                ><h4 class="recursos1">Recursos</h4></a
+              >
+              <div class="sobre-ns" ><h5 class="recursos1">Sobre nós</h5></div>
+            </nav>
+            <button class="cta-1" id="cta1">
+              <b class="entrar">Entrar</b>
+            </button>
+          </nav>
+        </nav>
+        <div class="main-content">
+          <div class="text">
+            <div class="main-txt">
+              <div class="title">
+                <h1 class="plataforma-inat-amaznia-container">
+                  <p class="plataforma-inat">Plataforma Inatú</p>
+                  <p class="plataforma-inat">Amazônia</p>
+                </h1>
+                <div class="line">
+                  <img class="vector-icon" alt="" src="./public/vector.svg" />
+                </div>
+              </div>
+              <p class="o-sistema-de">
+                O Sistema de Gestão Produtiva da marca coletiva das comunidades
+                da Amazônia.
+              </p>
+            </div>
+            <button class="cta-2" id="cta2">
+              <b class="entrar">Entrar</b>
+            </button>
+          </div>
+          <div class="illus-rosivaldo">
+            <img class="illus-icon" alt="" src="./public/rosivaldo.svg" />
+          </div>
+        </div>
+        <section class="assoc">
+          <div class="title1">
+            <b class="somos-a-unio">Somos a união entre:</b>
+          </div>
+          <div class="associacoes slider">
+            <img class="logo-rds-icon4" alt="" src="./public/rds.svg" style="height: 90px; width: 152px;" />
+            <img class="logo-apadrit-icon4" alt="" src="./public/apadrit.svg" style="height: 90px;"/>
+            <img class="logo-apfov-icon3" alt="" src="./public/apfov.svg" style="height: 90px;"/>
+            <img class="logo-asaga-icon3" alt="" src="./public/logoasaga2.svg"style="height: 90px;"/>
+            <img class="logo-aspacs-icon2" alt="" src="./public/aspacs.svg" style="height: 90px;"/>
+            <img class="logo-ilc-icon2" alt="" src="./public/ilc.svg" style="height: 90px;"/>
+            <img class="logo-idesam-icon2" alt="" src="./public/idesam.svg" style="height: 80px;" />
+          </div>
+        </section>
+      </section>
+      <section class="section-2" id="Beneficios">
+        <img class="section-2-child" alt="" src="./public/frame-4@2x.png" />
+        <h2 class="todos-os-dados">
+          Todos os dados produtivos de ponta a ponta, agora na segurança da rede
+        </h2>
+        <div class="content">
+          <div class="illus-g1-parent">
+            <div class="illus-g1">
+              <img class="bg-g2-icon" alt="" src="./public/bg-g2@2x.png" /><img
+                class="vector-icon1"
+                alt=""
+                src="./public/vector1.svg"
+              /><img class="gears-icon" alt="" src="./public/gears.svg" />
+            </div>
+            <h3 class="gesto-administrativa">Gestão administrativa</h3>
+            <div class="funcionrios-maquinrio-e">
+              Funcionários, maquinário e demais despesas podem ser ajustadas a
+              qualquer momento
+            </div>
+          </div>
+          <div class="illus-g2-parent">
+            <div class="illus-g1">
+              <img class="bg-g2-icon" alt="" src="./public/bg-g21@2x.png" /><img
+                class="vector-icon1"
+                alt=""
+                src="./public/vector2.svg"
+              /><img class="tabs-icon" alt="" src="./public/tabs.svg" />
+            </div>
+            <h3 class="gesto-administrativa">Gestão produtiva</h3>
+            <p class="cada-etapa-de">
+              Cada etapa de fabricação pode ser anotada em formulários feitos
+              sob medida
+            </p>
+          </div>
+          <div class="illus-g3-parent">
+            <div class="illus-g1">
+              <img class="bg-g2-icon" alt="" src="./public/bg-g3@2x.png" /><img
+                class="vector-icon1"
+                alt=""
+                src="./public/vector3.svg"
+              /><img class="paper-icon" alt="" src="./public/paper.svg" />
+            </div>
+            <h3 class="gesto-administrativa">Rastreabilidade</h3>
+            <p class="cada-etapa-de">
+              Organize o seu produto final para ser vendido por lotes gerados
+              dentro da plataforma
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" id="Sobre nos">
+        <section class="content1" id="Beneficiosdois">
+          <nav class="txt">
+            <img
+              class="logo-inatu-icon1"
+              alt=""
+              src="./public/logo-inatu1.svg"
+            />
+            <p class="somos-a-marca">
+              Somos a marca coletiva das comunidades amazônicas que, juntas ao
+              Idesam, conectamos produtos de origem e produção sustentável ao
+              mercado, contribuindo com a nossa autonomia e com a conservação da
+              floresta.
+            </p>
+          </nav>
+          <nav class="top">
+            <nav class="icons-fone">
+
+              <a href="https://www.instagram.com/inatuamazonia/">
+                <img
+                  class="insta-icon"
+                  alt=""
+                  src="./public/insta-icon.svg"
+                />
+              </a>
+              <a href="https://www.instagram.com/inatuamazonia/">
+              <img class="email-icon" alt="" src="./public/app icon.svg" /></a>
+
+
+              <p class="fone-92-3347-7350"  style="font-size: 20px;cursor: pointer;"  onclick="exibirCaixatres()">Contatos</p>
+
+              <div id="caixaPrivacidadetres" class="caixa-privacidade" style="display: none;">
+                <div class="fechar" onclick="fecharCaixatres()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14.59 12l4.7-4.7a.996.996 0 1 0-1.41-1.41L13.17 11l-4.7-4.7a.996.996 0 1 0-1.41 1.41L11.76 12l-4.7 4.7a.996.996 0 1 0 1.41 1.41l4.7-4.7 4.7 4.7a.996.996 0 1 0 1.41-1.41L14.59 12z"/>
+                  </svg>
+                </div>
+            
+            
+                <img src="/log/logo.png" alt="" height="100" width="180" > <br> <br>
+            
+                <p>
+                  <strong style="font-size: 20px;">Contatos</strong>
+                  <br><br>
+                  <p style="font-size: 20px;">E-mail:  vendas@inatuamazonia.com.br </p>
+                  <br>
+                  <p style="font-size: 20px;">E-mail:  contato@inatuamazonia.com.br</p>
+                <br>
+            
+                  Entre contato. <br><br>
+            
+                  
+              </div>
+
+            </nav>
+            <button class="cta-11" id="cta11">
+              <h4 class="entrar2">Entrar</h4>
+            </button>
+          </nav>
+          <nav class="links1">
+            <b><a href="https://inatuamazonia.com.br/" class="inatuamazoniacombr" style="text-decoration: none;">INATUAMAZONIA.COM.BR</a></b>
+            <nav class="lgpd-links">
+              
+
+
+
+
+              <p class="cookies" onclick="exibirCaixa()">Termos</p>
+
+              <div id="caixaPrivacidade" class="caixa-privacidade" style="display: none;">
+                <div class="fechar" onclick="fecharCaixa()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14.59 12l4.7-4.7a.996.996 0 1 0-1.41-1.41L13.17 11l-4.7-4.7a.996.996 0 1 0-1.41 1.41L11.76 12l-4.7 4.7a.996.996 0 1 0 1.41 1.41l4.7-4.7 4.7 4.7a.996.996 0 1 0 1.41-1.41L14.59 12z"/>
+                  </svg>
+                </div>
+            
+            
+                <img src="/log/logo.png" alt="" height="100" width="180" > <br> <br>
+            
+                <p>
+                  <strong>Termos e Condições de Uso</strong>
+                  <br><br>
+                
+            
+            Seja bem-vindo a Plataforma Inatú Amazônia! <br><br>
+            
+            Estes termos e condições descrevem as regras de uso do site da empresa Inatú Amazônia, localizado no endereço https://plataformainatu.com.br/. <br><br>
+            
+            Ao acessar este site, consideramos que você está de acordo com os termos e condições abaixo. <br> <br>
+            
+            Não continue a usar a Plataforma Inatú Amazônia caso você discorde dos termos e condições descritos neste termo. <br><br>
+            
+            <strong>Cookies:</strong> <br><br>
+            
+            O site usa cookies para ajudar na personalização da sua experiência na internet. Ao acessar o site Plataforma Inatú Amazônia, você concorda com o uso dos cookies requeridos. <br><br>
+            
+            Cookies são arquivos de texto inseridos no seu disco rígido por um servidor de página web. Os cookies não têm permissão para executar programas ou transferir vírus para seu computador. Os cookies são associados exclusivamente a você e só podem ser lidos pelo servidor web do domínio que emitiu o cookie. <br><br>
+            
+            Nós podemos usar cookies para coletar, armazenar ou rastrear informações para finalidades estatísticas e mercadológicas do nosso site. Você tem a opção de aceitar ou rejeitar os cookies opcionais. Existem alguns cookies obrigatórios, que são necessários para o funcionamento de nosso site. Esses cookies obrigatórios não requerem seu consentimento. Por favor, tenha em mente que, ao aceitar os cookies obrigatórios, você também aceitará cookies de terceiros, que podem ser usados por terceiros caso você utilize serviços fornecidos por eles em nosso site – por exemplo, uma janela de reprodução de vídeo fornecida por empresas terceiras e integrada ao nosso site. <br><br>
+            
+            <strong>Licença:</strong> <br><br>
+            
+            Exceto em casos em que for indicado o contrário, a Inatú Amazônia e seus licenciados têm direito à propriedade intelectual de todo o material postado na Plataforma Inatú Amazônia. Todos os direitos à propriedade intelectual são reservados. <br> <br>
+            
+            Você não tem permissão para: <br> <br>
+            
+            · Copiar ou republicar materiais do Plataforma Inatú Amazônia;<br>
+            
+            · Vender, alugar ou sublocar materiais do Plataforma Inatú Amazônia;<br>
+            
+            · Reproduzir, duplicar ou copiar materiais do Plataforma Inatú Amazônia;<br>
+            
+            · Redistribuir conteúdo do Plataforma Inatú Amazônia. <br> <br>
+            
+            Este acordo terá efeito a partir da data presente. <br> <br>
+            
+            Partes deste site oferecem ao usuário a oportunidade de postar e discutir opiniões e informações em determinadas áreas. A Inatú Amazônia não filtra, edita, publica ou revisa comentários antes 
+            
+            que eles sejam apresentados no site. Comentários refletem as opiniões da pessoa que os posta. Na extensão em que as leis aplicáveis permitem, A Inatú Amazônia não se responsabiliza legalmente pelos Comentários ou quaisquer danos, riscos ou despesas causadas ou sofridas como resultado do uso, e/ou postagem e/ou aparência dos comentários deste site. <br> <br>
+            
+            A Inatú Amazônia reserva para si o direito de remover quaisquer comentários que possam ser considerados inapropriados, ofensivos ou quebrem os Termos e Condições deste termo. <br> <br>
+            
+            Você declara e garante que: <br> <br>
+            
+            · Você tem o direito de postar Comentários em nosso site e tem todas as licenças e consentimentos para tal;<br>
+            
+            · Seus Comentários não invadem qualquer propriedade intelectual, incluindo direitos autorais, patentes ou marcas registradas de           terceiros; <br>
+            
+            · Seus Comentários não contêm material difamatório, injurioso, ofensivo, indecente ou de alguma forma ilícito, que é invasão de     privacidade. <br>
+            
+            · Seus Comentários não serão usados para solicitar ou promover negócios ou apresentar atividades comerciais ou atividades ilícitas. <br> <br>
+            
+            Você por meio deste, concede a Inatú Amazônia a licença não-exclusiva de usar, reproduzir, editar e autorizar outros a usar, reproduzir ou editar qualquer um de seus Comentários em qualquer e todas as formas, formatos e mídias. <br><br>
+            
+            <strong>Criação de links para nosso conteúdo</strong> <br><br>
+            
+            As seguintes organizações podem criar links para nosso Site sem a necessidade de aprovação prévia por escrito: <br><br>
+            
+            · Agências governamentais; <br>
+            
+            · Mecanismos de busca; <br>
+            
+            · Organizações de mídia; <br>
+            
+            · Distribuidores de diretórios online podem inserir links para nosso Site na mesma maneira que inserem hiperlinks para Sites de outras empresas listadas; <br>
+            
+            · Empresas credenciadas, exceto organizações angariastes sem fins lucrativos e grupos de arrecadação de fundos para instituições de caridade, que não podem inserir links para nosso Site sem aprovação prévia. <br> <br>
+            
+            Essas organizações podem postar links para nossa página inicial, nossas publicações ou outras informações do Site, contanto que o link: (a) não seja, de forma alguma, enganoso; (b) não insinue falsamente a existência de uma relação de patrocínio, endosso, ou aprovação nossa a produtos e/ou serviços; e (c) seja apropriado ao contexto em que está sendo inserido. <br> <br>
+            
+            Nós podemos considerar e aprovar solicitações de link feitas pelos seguintes tipos de organizações: <br> <br>
+            
+            · fontes de informação bem conhecidas sobre produtos e negócios; <br>
+            
+            · sites comunitários ponto.com; <br>
+            
+            · associações e outros grupos que representem instituições de caridade; <br>
+            
+            · distribuidores de diretórios online; <br>
+            
+            · portais de internet; <br>
+            
+            · firmas de contabilidade, advocacia e consultoria; <br>
+            
+            · instituições educacionais e associações de classe. <br> <br>
+            
+            Nós vamos aprovar solicitações de link feitas pelos tipos de organização listados acima se julgarmos que: (a) o link não é desfavorável para nossa imagem e/ou para a imagem de empresas credenciadas; (b) a organização solicitante não possui histórico negativo conosco; (c) o benefício que ganhamos com a visibilidade do link compensa a ausência do Inatú Amazônia; e (d) o link será inserido em um contexto geral informativo. <br> <br>
+            
+            Essas organizações podem postar links para nossa página inicial contanto que o link: (a) não seja, de forma alguma, enganoso; (b) não insinue falsamente a existência de uma relação de patrocínio, endosso, ou aprovação de produtos e/ou serviços da nossa parte; e (c) seja apropriado ao contexto em que está sendo inserido. <br> <br>
+            
+            Se você representa uma das organizações listadas no parágrafo 2 acima e está interessado em postar um link para nosso site, você deve nos informar de seu interesse enviando um e-mail para inatú Amazônia. Por favor, inclua seu some, o nome da sua organização e suas informações de contato, assim como a URL do seu site, uma lista das URLs do nosso site que você pretende usar como links, e uma lista dos sites nos quais você pretende publicar nossas URLs. Aguarde entre 2 e 3 semanas para receber uma resposta. <br> <br>
+            
+            Organizações aprovadas poderão publicar links para nosso Site das seguintes formas: <br> <br>
+            
+            · Usando nosso nome corporativo; ou <br>
+            
+            · Usando a URL para onde o link redireciona; ou <br>
+            
+            · Usando qualquer outra descrição do nosso Site que faça sentido dentro do contexto e do formato do conteúdo onde o link está sendo inserido. <br> <br>
+            
+            Não será permitido o uso ou a publicação de links para o logo e/ou outros elementos visuais da Inatú Amazônia sem um acordo de licença para o uso da marca registrada. <br> <br>
+            
+            <strong>Responsabilização pelo Conteúdo:</strong> <br> <br>
+            
+            Não seremos responsabilizados legalmente por qualquer conteúdo que apareça no seu Site. Você concorda em nos proteger e nos defender contra todas as acusações que forem levantadas no seu Site. Nenhum link deve aparecer em qualquer Site que possa ser interpretado como difamatório, obsceno, criminoso, ou que infrinja, viole ou defenda a violação dos direitos de terceiros. <br> <br>
+            
+            <strong>Reserva de Direitos:</strong> <br> <br>
+            
+            Reservamos nosso direito de solicitar que você remova todos os links ou quaisquer links que redirecionem para nosso site. Você concorda em remover imediatamente todos os links para nosso site assim que a remoção for solicitada. Também reservamos nosso direito de corrigir e
+            alterar estes termos e condições a qualquer momento. Ao publicar continuadamente links para nosso site, você concorda a seguir estes termos e condições sobre links. <br> <br>
+            
+            <strong>Remoção de links postados em nosso site:</strong> <br> <br>
+            
+            Se você encontrar qualquer link em nosso Site que seja de qualquer forma ofensivo, você tem a liberdade de entrar em contato conosco e nos informar do problema a qualquer momento. Vamos considerar as solicitações de remoção de links, mas não somos obrigados a remover quaisquer links do nosso site nem a responder diretamente à sua solicitação. <br> <br>
+            
+            Nós não garantimos que as informações continas neste site são corretas. Nós não garantimos integralidade ou exatidão do conteúdo. Não garantimos que o site se manterá disponível ou que o material do site se manterá atualizado. <br> <br>
+            
+            <strong>Declaração de Isenção de Responsabilidade:</strong> <br> <br>
+            
+            No máximo possível permitido por lei, nós excluímos todas as representações, garantias e condições relativas ao nosso site e ao uso deste site. Nada nesta declaração de isenção de responsabilidade vai: <br> <br>
+            
+            · limitar ou excluir nossa responsabilidade ou sua responsabilidade por mortes ou danos pessoais; <br>
+            
+            · limitar ou excluir nossa responsabilidade ou sua responsabilidade por fraudes ou deturpações fraudulentas; <br>
+            
+            · limitar nossa responsabilidade ou sua responsabilidade de quaisquer maneiras que não forem permitidas sob a lei; <br>
+            
+            · excluir quaisquer responsabilidades suas ou nossas que não podem ser excluídas de acordo com a lei aplicável. <br> <br>
+            
+            As limitações e proibições de responsabilização listadas nesta Seção e em outras partes desta declaração: (a) estão sujeitas ao parágrafo anterior; e (b) regem todas as responsabilizações que surgirem sob a declaração, incluindo responsabilizações surgidas em contrato, em delitos e em quebra de obrigações legais. <br> <br>
+            
+            Enquanto o site e as informações e serviços do site forem oferecidos gratuitamente, nós não seremos responsáveis por perdas e danos de qualquer natureza. <br> <br>
+            
+            Atenciosamente, <br> <br>
+            
+            Plataforma Inatú Amazônia.
+                </p>
+              </div>
+
+
+
+
+
+
+
+
+              <p class="privacidade" onclick="exibirCaixadois()">Privacidade</p>
+
+              <div id="caixaPrivacidadedois" class="caixa-privacidade" style="display: none;">
+                <div class="fechar" onclick="fecharCaixadois()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14.59 12l4.7-4.7a.996.996 0 1 0-1.41-1.41L13.17 11l-4.7-4.7a.996.996 0 1 0-1.41 1.41L11.76 12l-4.7 4.7a.996.996 0 1 0 1.41 1.41l4.7-4.7 4.7 4.7a.996.996 0 1 0 1.41-1.41L14.59 12z"/>
+                  </svg>
+                </div>
+            
+            
+                <img src="/log/logo.png" alt="" height="100" width="180" > <br> <br>
+            
+                <p>
+                  <strong>Política de privacidade</strong>
+                  <br><br>
+                
+            
+                  O site Plataforma Inatú Amazônia é de propriedade da empresa Inatú Amazônia, que é a controladora de seus dados pessoais. <br><br>
+            
+                  Nós adotamos esta Política de Privacidade, que determina como nós estamos processando as informações coletadas pelo site Plataforma Inatú Amazônia e também explica por que razões nós precisamos coletar dados pessoais sobre você. Portanto, você deve ler esta Política de Privacidade antes de usar o site Plataforma Inatú Amazônia. <br><br>
+                  
+                  Nós cuidamos dos seus dados pessoais e assumimos a responsabilidade de garantir a confidencialidade e segurança de suas informações pessoais. <br><br>
+                  
+                  <strong>Estes são as informações pessoais que coletamos:</strong> <br><br>
+                  
+                  Quando você visita o site Plataforma Inatú Amazônia, nós automaticamente coletamos certas informações sobre seu dispositivo, incluindo informações sobre seu navegador, endereço IP, fuso horário e alguns dos cookies instalados no seu dispositivo. Além disso, quando você navega pelo Site, nós coletamos informações sobre as páginas individuais ou produtos que você visualiza, sobre quais sites ou termos de busca redirecionaram você para nosso Site, e sobre como você interage com o Site. Nós nos referimos a essas informações coletadas automaticamente como "Informações sobre o dispositivo". Além disso, nós podemos coletar dados pessoais que você fornecer (incluindo, mas não limitado a: Nome, Sobrenome, Endereço, informações de pagamento etc.) durante o processo de registro para poder cumprir o acordo. <br> <br>
+                  
+                  <strong>Por que fazemos o processamento dos seus dados?</strong> <br> <br>
+                  
+                  Nossa maior prioridade é a segurança dos dados pessoais dos usuários e, portanto, nós podemos processar apenas dados mínimos, enquanto for absolutamente necessário para a manutenção do site. Informações coletadas automaticamente são usadas para identificar possíveis casos de abuso e estabelecer dados estatísticos sobre o uso do site. Esses dados estatísticos não agregam de outras formas que permitam a identificação de usuários específicos do sistema. <br> <br>
+                  
+                  Você pode visitar o site sem nos contar sobre quem você é ou relevar qualquer informação que possa ser usada por outra pessoa para identificar você individualmente. Se, apesar disso, você quiser utilizar algum dos recursos do site, ou quiser receber nosso newsletter, ou quiser conceder outros detalhes através do preenchimento e envio de formulários, você poderá fornecer dados pessoais para nós, como seu e-mail, nome, sobrenome, cidade de residência, organização e número de telefone. Você pode escolher não fornecer dados pessoais para nós, mas, dessa forma, talvez você não consiga usar alguns dos recursos do site. Por exemplo, você não vai conseguir receber nossa newsletter ou entrar em contato conosco diretamente pelo nosso site. Usuários que não tenham certeza sobre quais informações pessoais são obrigatórias são convidados a entrarem em contato conosco pelo e-mail dev.plataforma.app@gmail.com. <br> <br>
+                  
+                  <strong>Seus direitos:</strong> <br> <br>
+                  
+                  Se você mora em território nacional, estes são os direitos garantidos quanto aos seus dados pessoais: <br> <br>
+                  
+                  · Confirmação da existência de tratamento; <br>
+                  
+                  · Acesso aos dados; <br>
+                  
+                  · Correção de dados incompletos, inexatos ou desatualizados; <br>
+                  
+                  · Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos; <br>
+                  
+                  · Portabilidade dos dados a outro fornecedor de serviço ou produto; <br>
+                  
+                  · Eliminação dos dados pessoais tratados com o consentimento do titular; <br>
+                  
+                  · Informação das entidades públicas e privadas com as quais o Controlador realizou uso <br>
+                  
+                  · compartilhado de dados; <br>
+                  
+                  · Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa; <br>
+                  
+                  · Revogação do consentimento <br>
+                  
+                  Se você quiser exercitar esses direitos, por favor entre em contato conosco usando os dados de contato abaixo. <br> <br>
+                  
+                  Adicionalmente, se você mora fora do território nacional, nós afirmamos que estamos processando suas informações com a finalidade de cumprir contratos que possamos ter firmado com você (por exemplo, se você fizer uma compra no nosso Site), ou para exercer os interesses legítimos da nossa empresa listada acima. Além disso, por favor saiba que suas informações podem ser transferidas para fora da Europa, incluindo para o Canadá e os Estados Unidos da América. <br> <br>
+                  
+                  <strong>Links para outros sites:</strong> <br> <br>
+                  
+                  Nosso site pode conter links para outros sites que não são controlados por nós e/ou não são de nossa propriedade. Por favor, esteja ciente de que nós não somos responsáveis pelas políticas de privacidade de tais sites e organizações terceiras. Nós incentivamos você a estar ciente de quando sair do nosso site, e incentivamos você a ler a política de privacidade de cada um dos sites que podem coletar suas informações pessoais. <br> <br>
+                  
+                  <strong>Segurança das informações:</strong> <br> <br>
+                  
+                  Nós garantimos que as informações que você fornece estão em servidores e computadores armazenados em ambientes seguros e controlados, protegidos de acessos, usos e divulgações não-autorizadas. Nós matemos medidas de segurança administrativas, técnicas e físicas razoáveis, com finalidade de proteger os dados pessoais sob nossa custódia de acessos, usos, modificações e divulgações não-autorizadas. Apesar disso, nenhuma transmissão de dados pela Internet ou por sistemas sem fio pode ser garantida. <br> <br>
+                  
+                  <strong>Declaração legal:</strong> <br> <br>
+                  
+                  Nós vamos divulgar qualquer informação que coletarmos, usarmos ou recebermos caso tal divulgação seja solicitada ou permitida por lei, de forma a cumprir intimações ou processos judiciais similares, e também quando considerarmos em boa fé que a divulgação é necessária para a proteção de nossos direitos, para a proteção da segurança de outros, para investigações de fraude ou para responder a uma solicitação do governo. <br> <br>
+                  
+                  <strong>Informações de contato:</strong> <br> <br>
+                  
+                  Se você quiser entrar em contato conosco para saber mais sobre esta Política de Privacidade, ou quiser acessar quaisquer informações relativas aos seus direitos individuais e às suas Informações Pessoais, você poderá enviar um e-mail para o endereço dev.plataforma.app@gmail.com. <br> <br>
+                  
+                  Atenciosamente, <br> <br>
+                  
+                  Plataforma Inatú Amazônia. <br> <br>
+                  
+                  * A <strong>Plataforma Inatú Amazônia,</strong> declara e garante que cumpre toda a legislação aplicável sobre a segurança da informação, privacidade e proteção de dados, inclusive (sempre e quando aplicáveis) a Constituição Federal, o Código de Defesa do Consumidor, o Código Civil, o Marco Civil da Internet (Lei Federal n. 12.965/2014), seu decreto regulamentador (Decreto 8.771/2016), a Lei Geral de Proteção de Dados (Lei Federal n. 13.709/2018), e demais normas setoriais ou gerais sobre o tema, comprometendo-se a tratar os dados classificados como pessoais e pessoais sensíveis, coletados por meio do uso da plataforma somente nos estritos limites, como controlador de dados pessoais ou por meio de seus operadores, nos termos da lei aplicável; ou com o devido embasamento legal, sem transferi-los a qualquer terceiro, exceto se expressamente autorizado pelo titular dos dados, por este ou outro instrumento ou, ainda, para o cumprimento de obrigação legal ou regulatória ou em caso de decisão judicial que obrigue o fornecimento.
+                </p> <br> <br>
+
+                <p>veja tambem</p>
+                <a href="./politica/politica.html" >Política de privacidade Aplicativo Inatú Amazônia</a>
+
+              </div>
+
+
+            </nav>
+          </nav>
+        </section>
+        <div class="apoio">
+
+          
+
+          <nav class="realizao">
+            <img
+            class="idesam-logo-icon"
+            alt=""
+            src="./public/idesamlogo.svg"
+          />
+            <img
+              class="ppbio-logo-icon"
+              alt=""
+              src="./public/ppbio-logo-nova.svg"
+            />
+          </nav>
+          <div class="div">
+            <img  class="fundo-amazonia-icon" src="./public/fundo-amazonia.svg" alt="">
+           <img  class="wwf-logo-icon" src="./public/wwflogo.svg" alt="">
+
+          </div>
+        </div>
+      </footer>
+    </article>
+
+    <script>
+      var recursos = document.getElementById("recursos");
+      if (recursos) {
+        recursos.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='recursos']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "center" });
+          }
+        });
+      }
+      
+      var cta1 = document.getElementById("cta1");
+      if (cta1) {
+        cta1.addEventListener("click", function () {
+          window.open("associacoes.html");
+        });
+      }
+      
+      var cta2 = document.getElementById("cta2");
+      if (cta2) {
+        cta2.addEventListener("click", function () {
+          window.open("associacoes.html");
+        });
+      }
+      
+      var cta11 = document.getElementById("cta11");
+      if (cta11) {
+        cta11.addEventListener("click", function () {
+          window.open("associacoes.html");
+        });
+      }
+      </script>
+
+
+
+      <script>
+          // Carrosel associações tela desktop e mobile"
+
+        $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+      
+        
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+      
+      </script>
+
+
+
+      <script>
+        $(document).ready(function() {
+  // rola para a seção "Beneficios" ao clicar em "Recursos"
+  $(".recursos").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#Beneficios").offset().top
+    }, 1000);
+  });
+});
+
+      </script>
+
+      <script>
+
+$(document).ready(function() {
+  // rola para a seção "Beneficios" ao clicar em "Sobre nós"
+  $(".sobre-ns").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#Beneficiosdois").offset().top
+    }, 1000);
+  });
+});
+       
+
+      </script>
+
+
+
+      <!-- caixa modal de politica e termos -->
+
+  <script>
+
+
+    function exibirCaixa() {
+      document.getElementById("caixaPrivacidade").style.display = "block";
+    }
+    
+    function fecharCaixa() {
+      document.getElementById("caixaPrivacidade").style.display = "none";
+    }
+
+
+
+    function exibirCaixadois() {
+      document.getElementById("caixaPrivacidadedois").style.display = "block";
+    }
+    
+    function fecharCaixadois() {
+      document.getElementById("caixaPrivacidadedois").style.display = "none";
+    }
+
+    function exibirCaixatres() {
+      document.getElementById("caixaPrivacidadetres").style.display = "block";
+    }
+    
+    function fecharCaixatres() {
+      document.getElementById("caixaPrivacidadetres").style.display = "none";
+    }
+
+
+   
+  </script>
+
+
+
+
+  </body>
+</html>
+
+
+<!--<a href="https://www.instagram.com/inatuamazonia/">
+  <img
+    class="insta-icon"
+    alt=""
+    src="./public/insta-icon.svg"
+  />
+</a>
+-->
+
+
